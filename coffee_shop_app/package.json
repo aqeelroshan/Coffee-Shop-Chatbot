@@ -47,7 +47,6 @@
     "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.17.1",
     "@types/react": "~19.1.0",
     "@types/react-native": "^0.72.8",
     "eslint": "^9.25.0",
