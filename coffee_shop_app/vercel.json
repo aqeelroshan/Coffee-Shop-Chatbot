@@ -4,14 +4,18 @@
     "builds": [
         {
             "src": "package.json",
-            "use": "@vercel/static-build"
+            "use": "@vercel/static-build",
+            "config": {
+                "installCommand": "npm install",
+                "buildCommand": "npx expo export:web --platform web"
+            }
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/index.html"
+            "dest": "/dist/$1"
         }
     ],
-    "outputDirectory": "public"
+    "outputDirectory": "dist"
 }
